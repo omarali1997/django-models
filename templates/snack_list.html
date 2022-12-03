@@ -7,8 +7,10 @@
     {% for snack in object_list %}
     <li>
         {{snack.name}} 
-
     </li>
+        
+        <a href="{% url 'details' snack.id%}">details</a>
+        
     {% endfor%}
     {% endblock content %}
 </ul>
